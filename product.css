@@ -1,0 +1,149 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  transition: all 0.4s ease-in-out;
+}
+
+.product-container img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  transition: transform 0.3s;
+}
+.product-container img:hover {
+  transform: scale(1.05);
+}
+
+.product-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.product-info h1 {
+  color: #ff3c3c;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-info p {
+  margin: 0.5rem 0;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.quantity-controls button {
+  background-color: #ff3c3c;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.quantity-controls input {
+  width: 50px;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #444;
+  background-color: #333;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+#addToCartBtn {
+  background-color: #b30000;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#addToCartBtn:hover {
+  background-color: #ff3c3c;
+}
+
+.recommend-title {
+  text-decoration: underline;
+  margin-bottom: 4px;
+  text-align: center;
+  color: #ff3c3c;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#recommendations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem auto;
+}
+
+.recommend-item {
+  background-color: #2a2a2a;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+  box-shadow: 0 0 10px rgba(255, 60, 60, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+.recommend-item:hover {
+  transform: translateY(-5px);
+  background-color: #3a3a3a;
+}
+
+.recommend-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.not-found {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ff3c3c;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-container img {
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
+}

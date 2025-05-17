@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+
+        <!-- Progress Indicator -->
+        <div class="progress-bar">
+            <div class="progress-step active">Cart</div>
+            <div class="progress-step">Shipping</div>
+            <div class="progress-step">Payment</div>
+            <div class="progress-step">Review</div>
+        </div>
+
+        <!-- Order summary -->
+        <div id="order-summary">
+            <p>Total Items: <span id="totalItems">0</span></p>
+            <p>Total Price: $<span id="totalPrice">0.00</span></p>
+        </div>
+
+        <!-- Shipping Info -->
+        <div class="shipping-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter your address" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <!-- Payment Info (simplified) -->
+        <div>
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" required>
+                <option value="banktransfer">bank Transfer</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </div>
+
+        <!-- Order details list (populated dynamically by JavaScript) -->
+        <div class="order-details" id="orderDetailsContainer">
+            <!-- Order items will be dynamically added here -->
+        </div>
+
+        <!-- Confirm Purchase Button -->
+        <button id="completePurchaseButton" onclick="completeCheckout()" disabled>Complete Purchase</button>
+    </div>
+
+    <!-- Trust Signals (Security & Payment) -->
+    <div class="trust-signals">
+        <img src="https://via.placeholder.com/50" alt="Payment Method image 1" />
+        <img src="https://via.placeholder.com/50" alt="Payment Method image 2" />
+        <img src="kk" alt="Security Badge" />
+    </div>
+
+    <footer>
+        <p>&copy; 2025 GadgetNest. All rights reserved.</p>
+    </footer>
+
+    <!-- Make sure to include EmailJS SDK before your script -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="checkout.js"></script>
+</body>
+
+</html>

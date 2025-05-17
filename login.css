@@ -1,0 +1,78 @@
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 0, 64, 0.3);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #ff4c61;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background: #3a3a3a;
+  color: #fff;
+}
+
+button {
+  background-color: #ff4c61;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e04050;
+}
+
+.error {
+  color: #ff9999;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#formToggle button {
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  background: #444;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+
+#formToggle button:hover {
+  background: #ff4c61;
+}

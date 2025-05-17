@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GadgetNest | Product Details</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+  <div class="product-container" style="display: none">
+    <img id="productImage" alt="Product Image" />
+    <div class="product-info">
+      <h1 id="productName">Product Name</h1>
+      <p id="productPrice">₦0</p>
+      <p id="productDescription">Product description will appear here.</p>
+      <div class="quantity-controls">
+        <button onclick="changeQty(-1)">−</button>
+        <input type="number" id="quantity" value="1" min="1" />
+        <button onclick="changeQty(1)">+</button>
+      </div>
+      <button id="addToCartBtn">Add to Cart</button>
+    </div>
+  </div>  <div id="notFoundMessage" class="not-found">Product not found!</div>
+  <div class="recommend-title">Trending Now</div>
+  <div id="recommendations"></div>  
+ 
+  <script src="product.js"></script>
+  </body>
+</html>

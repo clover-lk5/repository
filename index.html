@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GadgetNest - Home</title>
+  <link rel="stylesheet" href="index.css">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Replace this with your actual header -->
+  <header class="shop-header">
+    <div class="logo">GadgetNest</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="shop.html">Shop</a>
+      <a href="login.html">Login</a>
+      <a href="cart.html"><i class="ri-shopping-bag-line cart-icon"></i>
+        <span class="cart-count" id="cart-count">(0)</span></a> 
+    </nav>
+  </header>
+
+
+   <section class="hero-banner" role="banner">
+    <h1>Welcome to GadgetNest</h1>
+    <h3>Discover the latest gadgets at unbeatable prices.</h3>
+    <button class="btn-shop-now" onclick="location.href='shop.html'">Shop Now</button>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section>
+    <h2>Featured Products</h2>
+    <div class="product-grid" id="featured-products"></div>
+  </section>
+
+  <!-- Trending Products Section -->
+  <section>
+    <h2>Trending Now</h2>
+    <div class="product-grid" id="trending-products"></div>
+  </section>
+
+  <!-- Categories Section -->
+ <h2>Shop Categories</h2>
+ <div class="category-links">
+  <a href="shop.html" class="category-link">Phones</a>
+  <a href="shop.html" class="category-link">Laptops</a>
+  <a href="shop.html" class="category-link">Earbuds</a>
+  <a href="shop.html" class="category-link">PowerBanks</a>
+  <a href="shop.html" class="category-link">Gaming</a>
+</div>
+
+<footer class="footer">
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Support</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="ri-twitter-fill"></i></a>
+      <a href="#"><i class="ri-facebook-fill"></i></a>
+      <a href="#"><i class="ri-instagram-fill"></i></a>
+      <a href="#"><i class="ri-tiktok-fill"></i></a>
+    </div>
+    <p>&copy; 2025 GadgetNest. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
